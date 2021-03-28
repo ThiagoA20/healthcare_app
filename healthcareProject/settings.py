@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> 080eaa3d89ebfb9ccafa8bfa5922bf89c5da735d
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -119,4 +122,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+<<<<<<< HEAD
 STATIC_URL = os.path.join(BASE_DIR, '/static/')
+=======
+STATIC_URL = '/static/'
+>>>>>>> 080eaa3d89ebfb9ccafa8bfa5922bf89c5da735d
