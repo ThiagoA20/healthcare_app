@@ -16,14 +16,14 @@
         <th>Number of publications</th>
         <th>Number of samples</th>
       </tr>
-    {% for equipment in equipment %}
+    {% for facility in facilities %}
       <tr>
-        <td>{{ equipment.facility_ID_id }}</td>
-        <td>Facility Address</td>
-        <td>{{ equipment.num_of_people_trained }}</td>
-        <td>{{ equipment.num_of_people_trained }}</td>
-        <td>{{ equipment.num_of_people_trained }}</td>
-        <td>{{ equipment.num_of_people_trained }}</td>
+        <td>{{ facility.name }}</td>
+        <td>{{ facility.address }}</td>
+        <td>{{ model.num_of_people_trained}}</td>
+        <td>{{ model.num_of_researchers}}</td>
+        <td>{{ model.num_of_publications}}</td>
+        <td>{{ model.num_of_samples}}</td>
       </tr>
     {% endfor %}
     </table>
