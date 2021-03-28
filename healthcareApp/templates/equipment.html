@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link href="{% static 'css/equipment.css' %}" rel="stylesheet">
+</head>
+<body>
+    <table>
+      <tr>
+        <th>Facility Name</th>
+        <th>Facility Address</th>
+        <th>Number of people trained</th>
+        <th>Number of researchers</th>
+        <th>Number of publications</th>
+        <th>Number of samples</th>
+      </tr>
+    {% for equipment in equipment %}
+      <tr>
+        <td>{{ equipment.facility_ID_id }}</td>
+        <td>Facility Address</td>
+        <td>{{ equipment.num_of_people_trained }}</td>
+        <td>{{ equipment.num_of_people_trained }}</td>
+        <td>{{ equipment.num_of_people_trained }}</td>
+        <td>{{ equipment.num_of_people_trained }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+
+</body>
+</html>
+
