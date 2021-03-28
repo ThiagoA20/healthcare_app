@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,14 +16,10 @@ body {
 <h1>Healtonic</h1>
 <p>Question 1</p>
 <p>Are you a doctor or licenced medical professional?</p>
-
-    {% for facility in facilities %}
-      <h1>{{ facility.address }}</h1>
-    {% endfor %}
-
 <a href="https://www.w3schools.com">
-<IMG STYLE="position:absolute; TOP:200px; LEFT:425px; WIDTH:250px; HEIGHT:250px" SRC="{% static 'media/yes.png' %}">
+<IMG STYLE="position:absolute; TOP:200px; LEFT:425px; WIDTH:250px; HEIGHT:250px" SRC="yes.png">
 <a href="https://www.w3schools.com">
-<IMG STYLE="position:absolute; TOP:200px; LEFT:850px; WIDTH:250px; HEIGHT:250px" SRC="{% static 'media/no.png' %}">
+<IMG STYLE="position:absolute; TOP:200px; LEFT:850px; WIDTH:250px; HEIGHT:250px" SRC="no.png">
 
 </body>
+</html>
